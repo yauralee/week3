@@ -11,7 +11,8 @@
 		<style type="text/css">
 		body {
 			margin: auto;
-		  padding: auto;
+    padding: auto;
+    font-family: sans-serif;
 		}
 		#all {
 			width: 720px;
@@ -19,47 +20,151 @@
 		}
 		  #first {
 				background-image: url(images/sunset-resized.jpg);
-				position: relative;
-				    height: 428px;
-						    background-size: 720px 428px;
+	    position: relative;
+	    height: 428px;
+	    background-size: 780px 750px;
 			}
-			#flo {
-				position: relative;
-    z-index: 1;
-    margin: 0 auto;
-    margin-top: 155px;
-    height: 75px;
-    padding: 0;
-    width: 530px;
-		    border-bottom: 1px solid red;
-				    background-color: white;
+			#layer {
+				position: absolute;
+    width: 100%;
+    height: 100%;
+    background: gray;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    top: 0;
+    right: 0;
+    z-index: 2;
+			}
+			.header {
+				display: inline-block;
+        font-size: 25px;
+        color: white;
+        margin-left: 95px;
+        margin-top: 12px;
+			}
+			.header1 {
+				display: inline-block;
+    float: right;
+    font-size: 9px;
+    margin-top: 20px;
+    margin-right: 90px;
+			}
+			.aaa{
+				text-decoration: none;
+    margin-right: 5px;
+    color: white;
+			}
+			#aaa1 {
+
+			}
+			#aaa2 {
+    margin-left: 5px;
+			}
+			#aaa3{
+				border: 1px solid white;
+    padding: 4px 10px;
+		border-radius: 1px;
+			}
+			#sec h1{
+				font-size: 18px;
+		text-align: center;
+		color: white;
+		margin: 0;
+			}
+			#sec h2{
+				margin: 3px auto;
+		font-size: 8.5px;
+				color: white;s
+			}
+			#s1 {
+				width: 258px;
+		border: 0 solid;
+		padding-bottom: 11px;
+		padding-top: 9px;
+		margin-top: 10px;
+		color: white;
+		font-size: 10px;
+		background-color: rgb(247,243,243);
+		border-radius: 1px;
+			}
+			#s2 {
+				width: 61px;
+		margin: 0;
+		border: 0 solid;
+		background-color: rgb(107,249,190);
+		padding-bottom: 11px;
+		padding-top: 10px;
+		color: white;
+		font-size: 8px;
+		border-radius: 1px;
 			}
 
+			#flo {
+				position: relative;
+	    z-index: 1;
+	    margin: 0 auto;
+	    margin-top: 155px;
+	    height: 75px;
+	    padding: 0;
+	    width: 530px;
+	    border: 1px solid rgb(223,221,221);
+	    background-color: white;
+	    border-radius: 2px;
+			}
+			.aa {
+				display: inline-block;
+			width: 128px;
+			text-align: center;
+			border-right: 1px solid rgb(223,221,221);
+			padding-bottom: 11px;
+			color: #6A6969;
+}
+.aa h2 {
+	font-size: 15px;
+    margin-top: 23px;
+    margin-bottom: 0;
+    color: #3E3E3E;
+}
+.aa h3 {
+	font-size: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #909090;
+}
+
+
+
 #second {
-	border-bottom: 1px solid red;
-	height: 250px;
+
+    background-color: rgb(245,244,244);
+		height: 316px;
+		border-bottom: 1px solid #EAE2E2;
 }
 #how{
 	text-align: center;
-margin-top: 70px;
-font-size: 8px;
+    padding-top: 70px;
+    margin-top: 0;
+    font-size: 8px;
+    background-color: rgb(245,244,244);
+		color: #6A6969;
 }
 #un {
     margin-top: 5px;
 }
       #cir1{
-				border: 1px solid #000;
-	display: inline-block;
-	border-radius: 100%;
-	width: 20px;
-	height: 20px;
-	margin: 20px 0 0 151px;
-	text-align: center;
-
-	font-size: 10px;
+				border: 1px solid rgb(223,221,221);
+	    display: inline-block;
+	    border-radius: 100%;
+	    width: 20px;
+	    height: 20px;
+	    margin: 20px 0 0 151px;
+	    text-align: center;
+	    font-size: 10px;
+	    background-color: white;
+	    color: rgb(152,150,150);
       }
 			#cir2{
-				border: 1px solid #000;
+				border: 1px solid rgb(223,221,221);
 	    display: inline-block;
 	    border-radius: 100%;
 	    width: 20px;
@@ -67,9 +172,11 @@ font-size: 8px;
 	    margin: 20px 0 0 0;
 	    text-align: center;
 	    font-size: 10px;
+	    color: rgb(152,150,150);
+	    background-color: white;
 			}
 			#cir3{
-				border: 1px solid #000;
+				border: 1px solid rgb(223,221,221);
 	    display: inline-block;
 	    border-radius: 100%;
 	    width: 20px;
@@ -77,6 +184,8 @@ font-size: 8px;
 	    margin: 20px 0 0 0;
 	    text-align: center;
 	    font-size: 10px;
+	    background-color: white;
+	    color: rgb(152,150,150);
 			}
 
 			#hr1{
@@ -97,11 +206,9 @@ font-size: 8px;
 				display: inline-block;
     list-style-type: none;
     width: 130px;
-
     padding-left: 98px;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0;
 			}
 			#b1 img {
 				width: 46px;
@@ -110,22 +217,23 @@ font-size: 8px;
 			}
 			#b1 h3 {
 				margin: 0 auto;
-		    font-size: 10px;
-		    margin-top: 0;
+    font-size: 10px;
+    margin-top: 0;
+    color: #545454;
 			}
 			#b1 p{
 				font-size: 7px;
 				    margin-bottom: 0;
 				    text-align: center;
+						color: #909090;
 			}
 			#b2 {
 				display: inline-block;
-    list-style-type: none;
-    width: 130px;
-
-    margin-left: 60px;
-    padding: 0;
-    text-align: center;
+	    list-style-type: none;
+	    width: 130px;
+	    margin-left: 60px;
+	    padding: 0;
+	    text-align: center;
 			}
 			#b2 img {
 				width: 50px;
@@ -134,19 +242,21 @@ font-size: 8px;
 			#b2 h3 {
 				margin: 0 auto;
 				    font-size: 10px;
+						color: #545454;
 			}
 			#b2 p{
 				font-size: 7px;
 				    text-align: center;
+						color: #909090;
 			}
 			#b3 {
 				display: inline-block;
-    list-style-type: none;
-    width: 130px;
-    left: 20px;
-    padding: 0;
-    margin-left: 60px;
-    text-align: center;
+	    list-style-type: none;
+	    width: 130px;
+	    left: 20px;
+	    padding: 0;
+	    margin-left: 60px;
+	    text-align: center;
 			}
 			#b3 img {
 				width: 52px;
@@ -154,94 +264,44 @@ font-size: 8px;
 			}
 			#b3 h3 {
 font-size: 10px;
+color: #545454;
 			}
 			#b3 p{
 				font-size: 7px;
 				    text-align: center;
+						color: #909090;
 			}
+
+
+
+
 			#third {
-				height: 375px;
-				    border-bottom: 1px solid red;
+
+						height: 380px;
+    border-bottom: 1px solid #EAE2E2;
+    background-color: rgb(245,244,244);
 			}
 			#third h2 {
 				text-align: center;
-				    font-size: 8px;
-						padding-top: 48px;
+    font-size: 8px;
+    padding-top: 50px;
     margin-top: 0;
-				    margin-bottom: 0;
+    margin-bottom: 0;
+    color: #545454;
 			}
 			#third hr {
 				margin-bottom: 0;
-				    margin-top: 3px;
+				    margin-top: 5px;
 			}
-			.header {
-				display: inline-block;
-				font-family: Microsoft YaHei;
-        font-size: 25px;
-        color: white;
-        margin-left: 95px;
-        margin-top: 12px;
-			}
-			.header1 {
-				display: inline-block;
-    float: right;
-    font-size: 9px;
-    margin-top: 20px;
-    margin-right: 133px;
-			}
-			.aaa{
-				text-decoration: none;
 
-			}
-			#aaa1 {
-
-			}
-			#aaa2 {
-    margin-left: 5px;
-			}
-			#aaa3{
-				border: 1px solid white;
-				padding: 5px;
-			}
 			#sec {
 				margin: 0 110px;
 				margin-top: 110px;
     width: 500px;
 		text-align: center;
 			}
-			#sec h1{
-				font-size: 18px;
-    text-align: center;
-    color: white;
-    margin: 0;
-			}
-			#sec h2{
-				margin: 3px auto;
-    font-size: 8.5px;
-			}
-			#s1 {
-				width: 258px;
 
-	 border: 0 solid;
 
-	 padding-bottom: 11px;
-	 padding-top: 9px;
-	 margin-top: 10px;
-	 color: white;
-	 font-size: 10px;
-	 background-color: gray;
-			}
-			#s2 {
-				width: 61px;
-     margin: 0;
-     border: 0 solid;
-     background-color: green;
-
-     padding-bottom: 11px;
-     padding-top: 10px;
-     color: white;
-     font-size: 8px;
-			}
 			.a {
 
 			}
@@ -276,13 +336,15 @@ margin-right: 11px;
 			}
 			.c h3 {
 				font-size: 10px;
-				    margin-top: 4px;
-				    margin-bottom: 4px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    color: #545454;
 			}
 			.c p {
 				font-size: 7px;
-				    margin-top: 0;
-				    margin-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 11px;
+    color: #909090;
 			}
 			.bc {
 				list-style-type: none;
@@ -291,34 +353,40 @@ width: 240px;
 
 
 			}
+
+
+			#forth {
+				text-align: center;
+	    height: 316px;
+	    border-bottom: 1px solid #EAE2E2;
+	    background-color: rgb(245,244,244);
+			}
+			#for {
+				    height: 40px;
+			}
 			.d {
 				font-size: 10px;
-    width: 167px;
-    margin-left: 260px;
-    border: 1px solid red;
+    width: 180px;
+    border: 1px solid rgba(161, 168, 175, 0.88);
     padding-bottom: 0;
     padding-top: 0;
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 0;
     margin-left: 268px;
+    border-radius: 2px;
 			}
 			#d1 {
 				display: inline-block;
-    width: 90px;
-
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-    border-right: 1px solid red;
-    background-color: gray;
+			width: 91px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			border-right: 1px solid rgba(161, 168, 175, 0.88);
+			background-color: rgba(161, 168, 175, 0.88);
+			color: white;
 			}
 			#d2 {
-display: inline-block;
-			}
-			#forth {
-				text-align: center;
-	height: 279px;
-	border-bottom: 1px solid red;
+				display: inline-block;
+						color: rgba(109, 115, 121, 0.88);
 			}
 			#quote {
 				width: 8px;
@@ -327,6 +395,15 @@ display: inline-block;
 						filter:gray;/* IE6-9 */
 filter: grayscale(1);/* W3C */
 			}
+			#last {
+				text-align: center;
+    width: 526px;
+    margin: auto;
+    font-size: 10px;
+    margin-top: 10px;
+    color: #827F7F;
+			}
+
 			#pic {
 				margin: 0 auto;
 				    padding: 0;
@@ -385,17 +462,23 @@ filter: grayscale(1);/* W3C */
     width: 60px;
 			}
 
-			#hasbac {
+			#fifth {
 				background-image: url(images/sunset-resized.jpg);
-				height:300px;
-
-		    display: -webkit-flex;
-		        display: flex;
-		        -webkit-align-items: center;
-		              align-items: center;
-		        -webkit-justify-content: center;
-		              justify-content: center;
-       height: 140px;
+        display: flex;
+        align-items: center;
+    justify-content: center;
+    height: 140px;
+    background-size: 720px 230px;
+			}
+			#layer1 {
+				position: absolute;
+    width: 720px;
+    height: 140px;
+    background: gray;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    top: 1442px;
+    left: 316px;
 			}
 
 
@@ -435,31 +518,10 @@ width: 22px;
 width: 15px;
 }
 
-			.aa {
-				display: inline-block;
-    width: 128px;
-    text-align: center;
-    border-right: 1px solid red;
-    padding-bottom: 11px;
-}
 
-.aa h2 {
-	font-size: 15px;
-	    margin-top: 23px;
-	    margin-bottom: 0;
-}
-.aa h3 {
-	font-size: 8px;
-	    margin-top: 5px;
-			    margin-bottom: 10px;
-}
-			#last {
-				text-align: center;
-    width: 526px;
-    margin: auto;
-    font-size: 10px;
-    margin-top: 10px;
-			}
+
+
+
 
 		</style>
 </head>
@@ -468,6 +530,7 @@ width: 15px;
 <body>
 	<div id="all">
 	<div id="first">
+		<div id="layer"></div>
     <div class="header">LOGO</div>
 		<nav class="header1">
       <a href="" class="aaa" id="aaa1">Agents</a>
@@ -477,7 +540,7 @@ width: 15px;
 		<section id="sec">
       <h1>Relax,Finding An Agent Just Got Easier</h1>
       <h2>Receive propsals from bet agents for free</h2>
-			<input id="s1" type="text" value="Enter Suburb" />
+			<input id="s1" type="text" value="&nbsp;&nbsp;Enter Suburb" />
 			<input id="s2" type="button" value="SEARCH" />
     </section>
 		<ul id="flo">
@@ -491,13 +554,13 @@ width: 15px;
 
 	<div id="second">
 		<h2 id="how">HOW IT WORKS</h2>
-		<hr id="un"width=20 size=1 color=red align=center noshade>
+		<hr id="un"width=20 size=1 color=gray align=center>
 		 <!--<div style="width:800px;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>-->
 		 <div>
 	   	<div id="cir1">1</div>
-			<hr id="hr1" width=80 size=1 color=red align=center noshade>
+			<hr id="hr1" width=80 size=1 color=white align=center noshade>
 	  	<div id="cir2">2</div>
-			<hr id="hr2" width=80 size=1 color=red align=center noshade>
+			<hr id="hr2" width=80 size=1 color=white align=center noshade>
 	  	<div id="cir3">3</div>
 		 </div>
 
@@ -522,7 +585,7 @@ width: 15px;
 
 	<div id="third">
 		<h2>WHY CHOOSE US?</h2>
-		<hr width=20 size=1 color=red align=center noshade>
+		<hr width=20 size=1 color=gray align=center noshade>
 
 		<div class="b" id="b">
 
@@ -608,12 +671,8 @@ width: 15px;
 
 
 
-
-
-
-
-
 		<div id="forth">
+			<div id="for"></div>
 			<div class="d">
       <div id="d1">Testimonials</div>
 			<div id="d2">Recent Feedbacks</div>
@@ -627,14 +686,17 @@ width: 15px;
 			</ul>
 		</div>
 
-		<footer>
-			<div id="hasbac">
+
+			<div id="fifth">
+		   <div id="layer1"></div>
 			<section id="inner">
 				<span>Find An Agent</span>
 				<input id="innertext" type="text" value="&nbsp;&nbsp;Enter Suburb"/>
 		  	<input id="innerbut" type="button" value="SEARCH"/>
 			</section>
 		</div>
+
+		<footer>
 			<div id="foo">
 				<nav id="footer1" class="g">
 					<a href="">Blog</a>
