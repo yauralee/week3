@@ -292,8 +292,6 @@ body {
 #quote {
   width: 8px;
   margin-top: 20px;
-  -webkit-filter: grayscale(1);
-  filter:gray;/* IE6-9 */
   filter: grayscale(1);/* W3C */
 }
 #testimonials p {
@@ -311,8 +309,6 @@ body {
 #testimonials li {
   display: inline-block;
   margin-top: 63px;
-  -webkit-filter: grayscale(1);
-  filter:gray;/* IE6-9 */
   filter: grayscale(1);/* W3C */s
 }
 #testimonials li img{
