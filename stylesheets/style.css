@@ -168,7 +168,7 @@ body {
   list-style-type: none;
   width: 130px;
   text-align: center;
-  margin: 0 auto;
+  margin-top: 0;
 }
 #card {
   padding-left: 98px;
